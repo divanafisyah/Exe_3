@@ -84,6 +84,44 @@ namespace Exe_3
                         Console.WriteLine("3. Display the first record in the list");
                         Console.WriteLine("4. Exit");
                         Console.Write("\nEnter your choice (1-4):");
+                        char ch = Convert.ToChar(Console.ReadLine());
+                        switch (ch)
+                        {
+                            case '1':
+                                {
+                                    obj.traverse();
+                                }
+                                break;
+                            case '2':
+                                {
+                                    if (obj.listEmpty() == true)
+                                    {
+                                        Console.WriteLine("\nList is empty");
+                                        break;
+                                    }
+                                    Node prev, curr;
+                                    prev = curr = null;
+                                    Console.Write("\nEnter the roll number of the student whose record is to be searched: ");
+                                    int num = Convert.ToInt32(Console.ReadLine());
+                                    if (obj.Search(num, ref prev, ref curr) == false)
+                                        Console.WriteLine("\nRecord found");
+                                    Console.WriteLine("\nRoll number: " + curr.rollNumber088);
+                                    Console.WriteLine("\nName: " + curr.nameDivaNafisyah);
+                                }
+                                break;
+                            case '3':
+                                {
+                                    object.firstNode();
+                                }
+                                break;
+                            case '4':
+                                return;
+                            default:
+                                {
+                                    Console.WriteLine("Invalid option");
+                                    break;
+                                }
+                        }
                     }
                 }
             }
