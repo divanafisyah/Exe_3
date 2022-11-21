@@ -61,6 +61,14 @@ namespace Exe_3
                     Console.Write(currentNode.rollNumber088 + "    " + currentNode.nameDivaNafisyah + "\n");
                 }
             }
+
+            public void firstNode()
+            {
+                if (listEmpty())
+                    Console.WriteLine("List is empty");
+                else
+                    Console.WriteLine("\nThe first record in the list is:\n\n" + LAST.next.rollNumber088 + "   " + LAST.next.nameDivaNafisyah);
+            }
         }
     }
 }
