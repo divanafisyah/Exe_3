@@ -104,10 +104,12 @@ namespace Exe_3
                                     prev = curr = null;
                                     Console.Write("\nEnter the roll number of the student whose record is to be searched: ");
                                     int num = Convert.ToInt32(Console.ReadLine());
-                                    if (obj.Search(num, ref prev, ref curr) == false)
-                                        Console.WriteLine("\nRecord found");
-                                    Console.WriteLine("\nRoll number: " + curr.rollNumber088);
-                                    Console.WriteLine("\nName: " + curr.nameDivaNafisyah);
+                                if (obj.Search(num, ref prev, ref curr) == false)
+                                    Console.WriteLine("\nRecord found");
+                                else
+                                    Console.WriteLine("\nRecord found");
+                                        Console.WriteLine("\nRoll number: " + curr.rollNumber088);
+                                        Console.WriteLine("\nName: " + curr.nameDivaNafisyah);
                                 }
                                 break;
                             case '3':
