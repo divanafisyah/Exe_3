@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,19 +14,5 @@ namespace Exe_3
         public int rollNumber;
         public string name;
         public Node next;
-    }
-    class CircularList
-    {
-        Node LAST;
-        public CircularList()
-        {
-            LAST = null;
-        }
-    }
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        }
     }
 }
