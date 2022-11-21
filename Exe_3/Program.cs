@@ -123,6 +123,10 @@ namespace Exe_3
                                 }
                         }
                     }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.ToString());
+                    }
                 }
             }
         }
