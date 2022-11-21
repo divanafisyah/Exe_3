@@ -45,5 +45,22 @@ namespace Exe_3
             else
                 return false;
         }
+
+        /*Traverses all the nodes of the list*/
+        public void traverse()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecords in the list are:\n");
+                Node currentNode;
+                currentNode = LAST.next;
+                while (currentNode != LAST)
+                {
+                    Console.Write(currentNode.rollNumber088 + "    " + currentNode.nameDivaNafisyah + "\n");
+                }
+            }
+        }
     }
 }
