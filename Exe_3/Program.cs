@@ -61,7 +61,7 @@ namespace Exe_3
                     Console.Write(currentNode.rollNumber088 + "    " + currentNode.nameDivaNafisyah + "\n");
                 }
             }
-
+        }
             public void firstNode()
             {
                 if (listEmpty())
@@ -69,8 +69,9 @@ namespace Exe_3
                 else
                     Console.WriteLine("\nThe first record in the list is:\n\n" + LAST.next.rollNumber088 + "   " + LAST.next.nameDivaNafisyah);
             }
+        }
             class program
-        {
+            {
             static void Main(string[] args)
             {
                 CircularList obj = new CircularList();
@@ -111,7 +112,7 @@ namespace Exe_3
                                 break;
                             case '3':
                                 {
-                                    object.firstNode();
+                                    obj.firstNode();
                                 }
                                 break;
                             case '4':
@@ -121,14 +122,13 @@ namespace Exe_3
                                     Console.WriteLine("Invalid option");
                                     break;
                                 }
+                            }
                         }
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.ToString());
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.ToString());
+                        }
                     }
                 }
             }
         }
-    }
-}
